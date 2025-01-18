@@ -1,16 +1,24 @@
 # employee_data
 
-A new Flutter project.
+Flutter Task: Employee Management that get employee data from Api and provides features like caching for offline access using `SharedPreferences`.
 
-## Getting Started
+## Important files
+-` employee_model.dart:
 
-This project is a starting point for a Flutter application.
+-Defines the structure of the Employee object and includes methods for JSON serialization and deserialization.
 
-A few resources to get you started if this is your first Flutter project:
+-`employee_service.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+-Handles API calls to fetch employee data using the Dio library.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-`cached_data.dart
+
+-Provides functionality to save and retrieve employee data from SharedPreferences for offline access.
+
+-`employee_page.dart
+
+-Displays the list of employees and manages the logic for loading cached data or fetching new data.
+
+-`employee_details_page.dart
+
+Displays detailed information about a selected employee.
